@@ -1,0 +1,123 @@
+*{
+  filter: drop-shadow(0 0 0.75rem rgba(220, 20, 60, 0.416));
+}
+body{
+  background-color: black;
+}
+.background{
+  filter: blur(1px);
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    background:blue;
+    border: 5px solid black;
+    
+    
+    }
+.background1{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    background:blue;
+    border: 5px solid black;
+    top: 50%;
+    left: 50%;
+    
+    }
+    button{
+     
+    
+    }
+    button:hover{
+      text-decoration: underline whitesmoke ;
+      line-height: 30px;
+      text-rendering: geometricPrecision;
+       
+    }
+    .overlay1{
+    position: absolute;
+    opacity: 100%;
+    z-index: 2;
+    top: 20%;
+    left: 1%;
+    text-shadow: 10px 2px 2px black;
+    text-decoration: underline 5px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    width: 50%;
+    
+    }
+    .overlay2{
+    position: absolute;
+    opacity: 100%;
+    z-index: 3;
+    top: 20%;
+    right: 1%;
+    text-shadow: 10px 2px 2px black;
+    text-decoration: underline 5px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    width: 50%;
+    height: 49%;
+    
+    }
+    .overlay3{
+    position: absolute;
+    opacity: 40%;
+    z-index: 4;
+    top: 30%;
+    left: 25%;
+    text-shadow: 10px 2px 2px black;
+    text-decoration: underline 5px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    width: 55%;
+    
+    }
+    .overlay4{
+    position: absolute;
+    opacity: 100%;
+    z-index: 5;
+    top: 80%;
+    left: 39%;
+    text-shadow: 10px 2px 2px black;
+    text-decoration: underline 5px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    width: 20%;
+    
+    }
+    .overl{
+      filter: drop-shadow(0 0 0.75rem crimson);
+      position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 45%;
+    
+    
+    
+    }
+    button{
+      margin-left: 10px;
+      justify-content: center;
+      justify-content: space-around;
+      border-radius: 70px;
+      width: 10%;
+      background-image: url(wallpapersden.com_k-league-of-legends-2020_1920x1080.jpg );
+      background-repeat: no-repeat;
+      background-size: 97%;
+      backface-visibility: hidden;
+      color: white;
+      margin-top: 20px;
+      font-style: oblique;
+      font-family:one piece ;
+      border: 2px solid navajowhite;
+      opacity: 90%;
+     font-weight: 50%;
+     filter: drop-shadow(-10px 10px 4px crimson);
+    
+    }
+    .card{
+      opacity: 100%;
+    }
+     

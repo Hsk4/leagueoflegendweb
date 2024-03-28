@@ -1,0 +1,154 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.684);
+}
+img{
+    /* filter: blur(2px);
+    -webkit-filter: blur(8px); */
+   
+}
+.background{
+    
+    opacity: 100%;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    background:blue;
+    border: 3px solid black;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  opacity: 90%;
+    
+}
+.background1{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    background:blue;
+    border: 5px solid black;
+    top: 50%;
+    border: 3px solid black;
+    
+}
+    .overlay{   
+        border: 3px solid black;
+        position: absolute;
+        opacity: 90%;
+        z-index: 2;
+        top: 20%;
+        left: 5%;
+        text-shadow: 10px 2px 2px black;
+        text-decoration: underline 5px;
+        filter: drop-shadow(0 0 0.75rem black);
+        width: 90%;
+        opacity: 100%
+        ;
+    }
+
+
+.background2{
+
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    background:blue;
+    border: 5px solid black;
+    top: 50%;
+}
+.overlay3{
+    
+    position: absolute;
+    opacity: 70%;
+    z-index: 2;
+    top: 150%;
+    left: 5%;
+    text-shadow: 10px 2px 2px black;
+    filter: drop-shadow(0 0 0.75rem black);
+    width: 90%;
+    opacity: 100%
+    ;
+
+}
+
+
+
+
+
+
+
+    .overlay2{
+        opacity: 50%;
+        width: 50%;
+        filter: drop-shadow(0 0 0.75rem crimson);
+        position: absolute;
+        z-index: 3;
+        top: 40%;
+        left: 27%;}
+        
+        
+       
+
+
+
+
+
+
+
+
+        video{
+            border-radius: 20px;
+        }
+
+
+
+      
+        .cards{
+            background-image: url(aram.jpg);
+            background-size: 100%;
+        }
+        p{
+            color: wheat;
+            opacity: 70%;
+            text-align: start;
+            font-style: italic;
+        }
+
+        .footer{
+            background-image: url(wallpapersden.com_k-league-of-legends-2020_1920x1080.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            background-color:grey;
+            margin: 0%;
+            text-align: center;
+            /* border: 3px solid black; */
+            text-transform: capitalize;
+            filter: drop-shadow(0 0 0.75rem black);
+            height: 300px;
+            text-shadow: 2px 2px 2px black;
+    
+        }
+        li{
+            padding: 10px 10px 10px 10px ;
+           
+        }
+      .card{
+        filter: drop-shadow(0 0 1rem black);
+      }
+     
+
+      /* button */
+      

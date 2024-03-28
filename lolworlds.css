@@ -1,0 +1,46 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    
+    font-style: italic;
+}
+body{
+background-color: rgba(0, 0, 0, 0.429);
+filter: drop-shadow(0 0 0.5rem black);
+}
+
+h1{
+    text-align: center;
+    
+    text-decoration: underline 2px;
+    text-transform: uppercase;
+    text-shadow: -5px 1px 1px white;
+    font-style: italic;
+}
+h3{
+  margin-left: 30px;
+}
+p{
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+ 
+   
+
+}
+h5{
+  margin-left: 50px;
+}
+.para{
+  margin-left: 10px;
+  width: 50%;
+  text-align: center;
+}
+img{
+  margin-left: 10px;
+  filter: drop-shadow(0 0 0.5rem white);
+}
+video{
+  filter: drop-shadow(0 0 0.5rem white);
+}
