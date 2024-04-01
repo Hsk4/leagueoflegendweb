@@ -14,7 +14,7 @@
   <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-light ">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark text-light ">
             <div class="container-fluid">
           <a style="filter: drop-shadow(0 0 0.75rem white);" class="navbar-brand text-light" href="frontpage.html"><img src="logo-1200-04b3cefafba917c9c571f9244fd28a1e.png" width="10%" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,11 @@
             </form>
           </div>
         </div>
-    </nav>
+    </nav> -->
+    <?php
+    include 'navbar.html';
+    
+    ?>
 </header>
     
     
@@ -112,12 +116,37 @@
 
 
         <div>
+        <?php
+include 'conn.php';
+$sql = mysqli_query($conn, "SELECT * FROM imgpaths");
+if($row = mysqli_fetch_assoc($sql)) {
+    ?>
+    <h3>WORLDS 2011</h3>
+    <h5>Fnatic  <img src='fnatic-logo.png' width='5%'  alt=''></h5>
+    <div id="imageContainer"></div> <!-- Container for the image -->
+    <p class='para'>The Season 1 Championship[12] was held in June 2011 at Dreamhack Summer 2011, and featured a US$100,000 tournament prize pool.[13] 8 teams from Europe, North America, Southeast Asia[a] participated in the championship.[citation needed] Over 1.6 million viewers watched the streaming broadcast of the event, with a peak of over 210,069 simultaneous viewers in the final.[14] Maciej 'Shushei' Ratuszniak of the winning team Fnatic was named the most valuable player (MVP) of the tournament.[15]</p>
 
-          <h3>WORLDS 2011</h3>
-          <h5>Fnatic  <img src="fnatic-logo.png" width="5%"  alt=""></h5>
-          <img src="fnatic.jpeg" width="50%" alt="">
-          <p class="para">The Season 1 Championship[12] was held in June 2011 at Dreamhack Summer 2011, and featured a US$100,000 tournament prize pool.[13] 8 teams from Europe, North America, Southeast Asia[a] participated in the championship.[citation needed] Over 1.6 million viewers watched the streaming broadcast of the event, with a peak of over 210,069 simultaneous viewers in the final.[14] Maciej "Shushei" Ratuszniak of the winning team Fnatic was named the most valuable player (MVP) of the tournament.[15]</p>
-        </div>
+    <?php
+    echo "Image Path: " . $row['logo'] . "<br>"; // Debug: Output image path
+    ?>
+    <script>
+        console.log("Image Path: <?php echo $row['logo']; ?>"); // Debug: Log image path to console
+        window.addEventListener('DOMContentLoaded', function() {
+            var imagePath = "<?php echo $row['logo']; ?>"; // Image path from PHP
+            console.log("Image Path from PHP: " + imagePath); // Debug: Log image path to console
+            var imageElement = document.createElement('img'); // Create image element
+            imageElement.src = imagePath; // Set image source
+            imageElement.alt = 'Image from Database'; // Set image alt text
+            imageElement.style.width = '50%'; // Set image width
+            document.getElementById('imageContainer').innerHTML = ''; // Clear previous content
+            document.getElementById('imageContainer').appendChild(imageElement); // Append image to container
+        });
+    </script>
+    <?php
+}
+?>
+
+
 <hr>          
          
         <div>
